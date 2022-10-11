@@ -1,0 +1,127 @@
+<div class="grid-almacen" #almacenRef>
+    <div class="cols-mostrador">
+      <p class="titulos">POR SURTIR</p>
+      <hr />
+      <div class="cards-contenedor">
+        <div
+          *ngFor="let item of porSurtirList"
+          class="card-por-surtir"
+          (click)="popUp(item)"
+        >
+          <p class="negrita">{{ item.Folio }}</p>
+          <p>{{ item.Socio }}</p>
+          <p class="tiempo-titulos">
+            {{ item.Fecha | date: "dd/MM/yyyy HH:mm a" }}
+          </p>
+          <p>{{ item.SlpName }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="cols-mostrador">
+      <p class="titulos">SURTIENDO</p>
+      <div class="cards-contenedor">
+        <div
+          *ngFor="let item of surtiendoList"
+          [ngClass]="item.class"
+          (click)="surtiendoClick(item)"
+        >
+          <div>
+            <p class="negrita">{{ item.Folio }}</p>
+            <p>{{ item.Fecha | date: "dd/MM/yyyy HH:mm a" }}</p>
+            <hr class="linea" />
+            <div class="tiempo-titulos tiempo-titulo-surtidor">
+              {{ item.NomSurtidor }}
+            </div>
+            <p class="tiempo-titulos">
+              {{ item.FechaSurtiendo | date: "HH:mm a" }}
+            </p>
+            <p class="tiempo-titulos">{{ item.tiempo }}</p>
+          </div>
+  
+          <div
+            class="foto-surtidor"
+            [ngStyle]="{
+              'background-image': 'url(\'' + item.Foto + '\')'
+            }"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols-mostrador">
+      <p class="titulos">ENTREGADO</p>
+      <div class="cards-contenedor">
+        <div *ngFor="let item of entregadoList" [ngClass]="item.class">
+          <div>
+            <p class="negrita">{{ item.Folio }}</p>
+            <p>{{ item.Fecha | date: "dd/MM/yyyy HH:mm a" }}</p>
+            <hr class="linea" />
+            <div class="tiempo-titulos tiempo-titulo-surtidor">
+              {{ item.NomSurtidor }}
+            </div>
+            <table id="tabla-datos-tiempos">
+              <tr>
+                <td style="text-align: left">Surtiendo</td>
+                <td class="tiempo-titulos">
+                  {{ item.FechaSurtiendo | date: "HH:mm a" }}
+                </td>
+              </tr>
+            </table>
+            <p class="tiempo-titulos">
+              {{ item.FechaEntregado | date: "HH:mm a" }}
+            </p>
+            <p class="tiempo-titulos">{{ item.tiempo }}</p>
+          </div>
+  
+          <div
+            class="foto-surtidor"
+            [ngStyle]="{
+              'background-image': 'url(\'' + item.Foto + '\')'
+            }"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols-mostrador">
+      <p class="titulos">CERRADO</p>
+      <div class="cards-contenedor">
+        <div *ngFor="let item of cerradoList" class="card-surtiendo">
+          <div>
+            <p class="negrita">{{ item.Folio }}</p>
+            <p>{{ item.Fecha | date: "dd/MM/yyyy HH:mm a" }}</p>
+            <hr class="linea" />
+            <div class="tiempo-titulos tiempo-titulo-surtidor">
+              {{ item.NomSurtidor }}
+            </div>
+            <table id="tabla-datos-tiempos">
+              <tr>
+                <td style="text-align: left">Surtiendo</td>
+                <td class="tiempo-titulos">
+                  {{ item.FechaSurtiendo | date: "HH:mm a" }}
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Entregado</td>
+                <td class="tiempo-titulos">
+                  {{ item.FechaEntregado | date: "HH:mm a" }}
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Cerrado</td>
+                <td class="tiempo-titulos">
+                  {{ item.FechaCerrado | date: "HH:mm a" }}
+                </td>
+              </tr>
+            </table>
+          </div>
+  
+          <div
+            class="foto-surtidor"
+            [ngStyle]="{
+              'background-image': 'url(\'' + item.Foto + '\')'
+            }"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

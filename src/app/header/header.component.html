@@ -1,0 +1,27 @@
+<header class="header" *ngIf="activarMenu">
+    <div class="titulo">dcTime</div>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a class="botones-menu"
+            >Consultas <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <ul class="subMenu">
+            <li class="item">
+              <a routerLink="consultaPedidos" class="botones-menu">Pedidos</a>
+            </li>
+            <li class="item">
+              <a routerLink="consultas" class="botones-menu">Detalle</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a routerLink="surtidores" class="botones-menu">Surtidores</a>
+        </li>
+        <li>
+          <a routerLink="bannerabc" class="botones-menu">Banner</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  

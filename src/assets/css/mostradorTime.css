@@ -1,0 +1,54 @@
+.grid-mostrador {
+    width: 100%;
+    margin: auto;
+    /* padding: 10px; */
+
+    display: grid;
+    grid-template-columns: 15% 15% 70%;
+    gap: 5px;
+}
+
+.folio {
+    font-size: xx-large;
+}
+
+.video {
+    border-radius: 10px;
+    min-width: 100%;
+    min-height: 90vh;
+    max-height: 90vh;
+    object-fit:fill;
+}
+
+.card-mostrador {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin: 0px 0px 20px 0px;
+
+    font-size: large;
+}
+
+.cols-mostrador {
+    border-radius: 10px;
+    background: linear-gradient(rgb(12, 12, 12), rgba(202, 3, 3, 0.671));
+    height: 100vh;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    overflow: auto;
+}
+
+.tiempo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.columna-tres {
+    max-height: 100%;
+}

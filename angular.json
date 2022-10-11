@@ -23,7 +23,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/dcTime.css",
+              "src/assets/css/almacenTime.css",
+              "src/assets/css/popup.css",
+              "src/assets/css/clock.css",
+              "src/assets/css/mostradorTime.css",
+              "src/assets/css/banner.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },

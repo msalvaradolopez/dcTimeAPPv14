@@ -1,0 +1,165 @@
+.grid-almacen {
+    width: 100%;
+    margin: auto;
+    padding: 5px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.cols-almacen {
+    border-radius: 10px;
+    background: linear-gradient(rgb(12, 12, 12), rgba(202, 3, 3, 0.671));
+    height: 100vh;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    overflow: auto;
+}
+
+.titulos {
+    padding: 20px;
+    height: 40px;
+    font-size:xx-large;
+}
+
+.cards-contenedor {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-surtiendo {
+    border-radius: 10px;
+    background: linear-gradient(rgb(248, 247, 247), rgba(71, 71, 71, 0.486));
+    width: 100%;
+    height: 100%;
+    color: black;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 10px;
+
+    font-size: larger;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.card-por-surtir {
+    border-radius: 10px;
+    background: linear-gradient(rgb(248, 247, 247), rgba(71, 71, 71, 0.486));
+    width: 100%;
+    height: 100%;
+    color: black;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 10px;
+
+    font-size: larger;
+}
+
+.card-header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.card-titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px 10px 0px 0px;
+}
+
+.card-valores {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tiempos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.linea {
+    color: brown;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+
+.tiempo-titulos {
+    color: greenyellow;
+}
+
+.tiempo-titulo-surtidor {
+    font-size: large;
+    text-align: left;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
+    margin: auto;
+}
+
+.foto-surtidor {
+    display: flex;
+    align-items: center;
+
+    background-color: #03afff;
+    border-radius: 10%;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.surtidor {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 80px;
+}
+
+.surtidor-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.datos-tiempos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#tabla-datos-tiempos {
+    border-collapse: collapse;
+    width: 100%;
+}
+#tabla-datos-tiempos td, th{
+    padding: 0px;
+    border: 1px solid transparent;
+}
+
+.grid-tablet {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
